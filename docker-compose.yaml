@@ -7,9 +7,6 @@ services:
     networks:
       - ojt_shared_network
     restart: always
-    ports: # TODO: these should be removed in production, only for local testing
-      - "5672:5672"
-      - "15672:15672"
     environment:
       RABBITMQ_DEFAULT_USER: ${RABBITMQ_ADMIN_USER:-admin}
       RABBITMQ_DEFAULT_PASS: ${RABBITMQ_ADMIN_PASSWORD:-password}
@@ -28,5 +25,4 @@ volumes:
 networks:
   ojt_shared_network:
     name: ojt_shared_network
-    external: true
     driver: bridge
