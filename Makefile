@@ -1,4 +1,3 @@
-# Makefile - Sạch sẽ, hoàn toàn vắng bóng các lệnh xử lý hạ tầng thủ công
 up:
 	podman compose -f docker-compose.yaml --env-file .env up -d
 
