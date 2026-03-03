@@ -1,4 +1,4 @@
-name: Shared Infrastructure Validation
+name: Shared Infrastructure CI Flow
 
 on:
   push:
